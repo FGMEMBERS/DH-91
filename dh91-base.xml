@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>0.75</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/DH-91/dh91-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/DH-91/Sounds/dh91-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/DH-91/Models/dh91.xml</path>
+    </model>
+
+    <panel>
+      <visibility archive="y">false</visibility>
+    </panel>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay>
+
+    <help>
+      <title>DH 91 Albatros</title>
+      <line>______________________________________________</line>
+    </help>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>175</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+  </sim>
+
+  <input>
+    <keyboard include="Nasal/dh91-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <dh91>
+      <file>Aircraft/DH-91/Nasal/doors.nas</file>
+    </dh91>
+  </nasal>
+
+</PropertyList>
+

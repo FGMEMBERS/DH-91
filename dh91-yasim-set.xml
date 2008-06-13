@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<PropertyList include="dh91-base.xml">
+
+  <sim>
+
+    <description>DH 91 Albatros (YASim)</description>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">dh91-yasim</aero>
+
+  </sim>
+
+</PropertyList>
