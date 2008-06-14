@@ -20,11 +20,10 @@
 
     <model>
       <path archive="y">Aircraft/DH-91/Models/dh91.xml</path>
+      <dh91>
+        <staircase type="bool">false</staircase>
+      </dh91>
     </model>
-
-    <panel>
-      <visibility archive="y">false</visibility>
-    </panel>
 
     <multiplay>
       <chat_display>1</chat_display>
@@ -32,8 +31,17 @@
 
     <help>
       <title>DH 91 Albatros</title>
-      <line>______________________________________________</line>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew doors</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close passengers doors</desc>
+      </key>
     </help>
+
+    <menubar include="Dialogs/staircase-menu.xml"/>
 
     <weight n="0">
       <name>Pilot</name>
@@ -50,6 +58,7 @@
   <nasal>
     <dh91>
       <file>Aircraft/DH-91/Nasal/doors.nas</file>
+      <file>Aircraft/DH-91/Nasal/staircase.nas</file>
     </dh91>
   </nasal>
 

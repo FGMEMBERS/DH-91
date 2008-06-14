@@ -68,6 +68,19 @@
     <object-name>propblurDE</object-name>
   </animation>
 
+  <!-- Escalier -->
+  <model>
+    <path>Aircraft/DH-91/Models/objects.xml</path>
+    <offsets>
+      <x-m> -8.786 </x-m>
+      <y-m> -1.732 </y-m>
+      <z-m> -1.760 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
   <animation>
     <name>CompleteGE</name>
     <object-name>propdiscGE</object-name>
@@ -732,7 +745,7 @@
     <type>rotate</type>
     <object-name>porteA</object-name>
     <property>instrumentation/doors/crew/position-norm</property>
-    <factor> -160.0 </factor>
+    <factor> -175.0 </factor>
     <center>
       <x-m> -7.744 </x-m>
       <y-m> -1.283 </y-m>
@@ -749,7 +762,7 @@
     <type>rotate</type>
     <object-name>porteB</object-name>
     <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> -160.0 </factor>
+    <factor> -175.0 </factor>
     <center>
       <x-m>  1.985 </x-m>
       <y-m> -1.156 </y-m>
