@@ -41,7 +41,7 @@
       </key>
     </help>
 
-    <menubar include="Dialogs/staircase-menu.xml"/>
+    <menubar include="Dialogs/dh91-menu.xml"/>
 
     <weight n="0">
       <name>Pilot</name>
@@ -59,6 +59,7 @@
     <dh91>
       <file>Aircraft/DH-91/Nasal/doors.nas</file>
       <file>Aircraft/DH-91/Nasal/staircase.nas</file>
+      <file>Aircraft/DH-91/Nasal/liveries.nas</file>
     </dh91>
   </nasal>
 
