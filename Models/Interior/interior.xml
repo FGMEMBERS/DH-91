@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/DH-91/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -6.230 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.244 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/DH-91/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.842 </x-m>
+      <y-m> -0.479 </y-m>
+      <z-m> -0.155 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
