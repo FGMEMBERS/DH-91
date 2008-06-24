@@ -30,6 +30,8 @@ D : Open/Close passengers door
 Thanks
 ======
 
+Pierre GEOFFROY for the new FDM
+
 ===============
 BARANGER Emmanuel
 June, 13, 2008. 
@@ -68,6 +70,8 @@ D : Ouverture/Fermeture porte passagers
 
 Remerciements
 =============
+
+Pierre GEOFFROY pour le nouveau FDM
 
 ===============
 BARANGER Emmanuel
