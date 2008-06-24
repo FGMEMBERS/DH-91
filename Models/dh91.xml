@@ -196,7 +196,7 @@
     <type>spin</type>
     <object-name>CompleteGE</object-name>
     <property>engines/engine[0]/rpm</property>
-    <factor> -1 </factor>
+    <factor> 1 </factor>
     <center>
       <x-m> -6.045 </x-m>
       <y-m> -6.179 </y-m>
@@ -394,7 +394,7 @@
     <type>spin</type>
     <object-name>CompleteDI</object-name>
     <property>engines/engine[3]/rpm</property>
-    <factor> -1 </factor>
+    <factor> 1 </factor>
     <center>
       <x-m> -6.421 </x-m>
       <y-m>  3.076 </y-m>
