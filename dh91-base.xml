@@ -27,6 +27,14 @@
 
     <multiplay>
       <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
     </multiplay>
 
     <help>
@@ -41,7 +49,7 @@
       </key>
     </help>
 
-    <menubar include="Dialogs/dh91-menu.xml"/>
+    <menubar include="Gui/dh91-menu.xml"/>
 
     <weight n="0">
       <name>Pilot</name>
@@ -60,6 +68,8 @@
       <file>Aircraft/DH-91/Nasal/doors.nas</file>
       <file>Aircraft/DH-91/Nasal/staircase.nas</file>
       <file>Aircraft/DH-91/Nasal/liveries.nas</file>
+      <file>Aircraft/DH-91/Nasal/light.nas</file>
+      <file>Aircraft/DH-91/Nasal/immat.nas</file>
     </dh91>
   </nasal>
 

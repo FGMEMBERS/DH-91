@@ -115,10 +115,21 @@
     <object-name>porteD2</object-name>
     <object-name>air</object-name>
     <object-name>interroues</object-name>
+
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
   </animation>
+
+  <!-- Immatriculation -->
+  <model>
+    <path>Aircraft/DH-91/Models/Immat/immat.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
 
   <!-- Escalier -->
   <model>
