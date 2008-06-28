@@ -24,6 +24,7 @@
     <object-name>porteB</object-name>
     <object-name>derive</object-name>
     <object-name>moteurs</object-name>
+    <object-name>echappe</object-name>
     <object-name>profondeurG</object-name>
     <object-name>profondeurD</object-name>
     <object-name>directionG</object-name>
@@ -41,6 +42,7 @@
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
     <object-name>antenne</object-name>
+    <object-name>axeA</object-name>
     <object-name>axeG1</object-name>
     <object-name>axeG2</object-name>
     <object-name>axeD1</object-name>
@@ -88,6 +90,7 @@
     <object-name>porteB</object-name>
     <object-name>derive</object-name>
     <object-name>moteurs</object-name>
+    <object-name>echappe</object-name>
     <object-name>profondeurG</object-name>
     <object-name>profondeurD</object-name>
     <object-name>directionG</object-name>
@@ -105,6 +108,7 @@
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
     <object-name>antenne</object-name>
+    <object-name>axeA</object-name>
     <object-name>axeG1</object-name>
     <object-name>axeG2</object-name>
     <object-name>axeD1</object-name>

@@ -23,6 +23,9 @@
       <dh91>
         <staircase type="bool">false</staircase>
       </dh91>
+      <livery>
+        <file type="string">default</file>
+      </livery>
     </model>
 
     <multiplay>

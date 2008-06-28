@@ -23,8 +23,10 @@ var immat_dialog = gui.Dialog.new("/sim/gui/dialogs/dh91/status/dialog",
 				  "Aircraft/DH-91/Gui/immat.xml");
 
 if (props.globals.getNode("/sim/model/immat") == nil) {
-  var callsign = props.globals.getNode("/sim/multiplay/callsign",1).getValue();
-  props.globals.getNode("/sim/model/immat",1).setValue(callsign);
+  var immat = props.globals.getNode("/sim/model/immat",1);
+  var callsign = props.globals.getNode("/sim/multiplay/callsign").getValue();
+  if (callsign != "callsign") immat.setValue(callsign.getValue());
+  else immat.setValue("G-AFDK");
 }
 
 refresh_immat();
