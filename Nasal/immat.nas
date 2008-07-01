@@ -25,8 +25,8 @@ var immat_dialog = gui.Dialog.new("/sim/gui/dialogs/dh91/status/dialog",
 setlistener("/sim/signals/fdm-initialized", func {
   if (props.globals.getNode("/sim/model/immat") == nil) {
     var immat = props.globals.getNode("/sim/model/immat",1);
-    var callsign = props.globals.getNode("/sim/multiplay/callsign");
-    if (callsign != "callsign") immat.setValue(callsign.getValue());
+    var callsign = props.globals.getNode("/sim/multiplay/callsign").getValue();
+    if (callsign != "callsign") immat.setValue(callsign);
   else immat.setValue("G-AFDK");
   }
   refresh_immat();
