@@ -52,7 +52,7 @@
       </key>
     </help>
 
-    <menubar include="Gui/dh91-menu.xml"/>
+    <menubar include="Dialogs/dh91-menu.xml"/>
 
     <weight n="0">
       <name>Pilot</name>
