@@ -7,18 +7,31 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
-    <object-name>panel</object-name>
+    <object-name>inttour</object-name>
 
     <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
   </animation>
 
   <!-- Tableau de bord -->
   <model>
     <path>Aircraft/DH-91/Models/Interior/Panel/panel.xml</path>
     <offsets>
-      <x-m> -6.230 </x-m>
+      <x-m> -8.980 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.244 </z-m>
+      <z-m>  0.756 </z-m>
     </offsets>
   </model>
 
@@ -26,11 +39,16 @@
   <model>
     <path>Aircraft/DH-91/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -5.842 </x-m>
+      <x-m> -7.836 </x-m>
       <y-m> -0.479 </y-m>
-      <z-m> -0.155 </z-m>
+      <z-m>  0.845 </z-m>
     </offsets>
   </model>
 
+<!--
+      <x-m> -2.750 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.000 </z-m>
+-->
 </PropertyList>
 

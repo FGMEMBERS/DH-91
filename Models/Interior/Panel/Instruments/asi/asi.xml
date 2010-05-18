@@ -1,44 +1,70 @@
-<?xml version="1.0"?>
-
-<!-- Airspeed indicator -->
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
-	<path>asi.ac</path>
-<!--
-	<texture-path>Textures</texture-path>
--->
-	<animation>
-		<type>rotate</type>
-		<object-name>needle</object-name>
-		<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>32.4</ind><dep>65</dep></entry>
-			<entry><ind>54</ind><dep>175</dep></entry>
-			<entry><ind>75.6</ind><dep>283</dep></entry>
-			<entry><ind>97.2</ind><dep>380</dep></entry>
-			<entry><ind>108</ind><dep>425</dep></entry>
-			<entry><ind>135</ind><dep>515</dep></entry>
-			<entry><ind>216</ind><dep>650</dep></entry>
-		</interpolation>
-		<center>
-			<x-m>0</x-m>
-			<y-m>0</y-m>
-			<z-m>0</z-m>
-		</center>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
+  <path>asi.ac</path>
 
-	<!-- *** LoD *** -->
-	<animation>
-		<type>range</type>
-		<min-m>0</min-m>
-		<max-m>30</max-m>
-	</animation>
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation> 
+    <type>material</type>
+    <object-name>bezelinside</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <interpolation>
+      <entry><ind>   0.00 </ind><dep>   0 </dep></entry> <!--   0 km/h -->
+      <entry><ind>  32.40 </ind><dep>  65 </dep></entry> <!--  60 km/h -->
+      <entry><ind>  43.20 </ind><dep> 113 </dep></entry> <!--  80 km/h -->
+      <entry><ind>  54.00 </ind><dep> 175 </dep></entry> <!-- 100 km/h -->
+      <entry><ind>  64.79 </ind><dep> 233 </dep></entry> <!-- 120 km/h -->
+      <entry><ind>  75.59 </ind><dep> 283 </dep></entry> <!-- 140 km/h -->
+      <entry><ind>  86.39 </ind><dep> 332 </dep></entry> <!-- 160 km/h -->
+      <entry><ind>  97.19 </ind><dep> 380 </dep></entry> <!-- 180 km/h -->
+      <entry><ind> 107.99 </ind><dep> 423 </dep></entry> <!-- 200 km/h -->
+      <entry><ind> 134.99 </ind><dep> 515 </dep></entry> <!-- 250 km/h -->
+      <entry><ind> 161.99 </ind><dep> 577 </dep></entry> <!-- 300 km/h -->
+      <entry><ind> 215.98 </ind><dep> 650 </dep></entry> <!-- 400 km/h -->
+    </interpolation>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
