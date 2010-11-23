@@ -35,11 +35,11 @@
     <object-name>alt-Needle2</object-name>
     <object-name>alt-Needle3</object-name>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.2 </green>
-      <blue>  0.0 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-    </emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission> 
   </animation>
 
    <animation> 
