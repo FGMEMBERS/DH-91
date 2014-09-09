@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>DH 91 Albatross</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Staircase</label>
+        <binding>
+          <command>nasal</command>
+          <script>
+            var p = "/sim/model/dh91/staircase";
+            setprop(p, var i = !getprop(p));
+            gui.popupTip("Staircase " ~ (i ? "On" : "Off"));
+          </script>
+        </binding>
+      </item>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+      <item>
+        <label>Immatriculation</label>
+        <binding>
+          <command>nasal</command>
+          <script>dh91.immat_dialog.toggle()</script>
+        </binding>
+      </item>
+    </menu>
+  </default>
+
+</PropertyList>
+

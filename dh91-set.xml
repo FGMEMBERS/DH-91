@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- <PropertyList include="dh91-jsbsim-set.xml"> -->
+<PropertyList include="dh91-yasim-set.xml">
+
+  <sim>
+    <description>DH 91 Albatros</description>
+    <author>Emmanuel BARANGER (3D/FDM), Pierre GEOFFROY (FDM)</author>
+  </sim>
+
+</PropertyList>
+
