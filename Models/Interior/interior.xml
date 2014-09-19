@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -8,6 +8,7 @@
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
     <object-name>inttour</object-name>
+    <object-name>planchet</object-name>
     <object-name>intporteA</object-name>
     <object-name>intporteB</object-name>
 
@@ -15,18 +16,12 @@
     <object-name>intvitres</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/DH-91/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intvitres</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Tableau de bord -->
   <model>
     <path>Aircraft/DH-91/Models/Interior/Panel/panel.xml</path>
@@ -49,9 +44,23 @@
 
   <!-- Porte -->
   <animation>
+    <type>pick</type>
+    <object-name>intporteA</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>intporteA</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> -175 </factor>
     <center>
       <x-m> -7.744 </x-m>
@@ -66,9 +75,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>intporteB</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>intporteB</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <factor> -175 </factor>
     <center>
       <x-m>  1.985 </x-m>
@@ -83,4 +106,3 @@
   </animation>
 
 </PropertyList>
-

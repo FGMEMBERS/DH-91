@@ -1,16 +1,16 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>objects.ac</path>
-
+  
   <animation>
     <!-- Objets opaques -->
     <object-name>escalier</object-name>
-
+    
     <!-- Objets transparents -->
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>escalier</object-name>
@@ -21,6 +21,5 @@
       </equals>
     </condition>
   </animation>
-
+  
 </PropertyList>
-

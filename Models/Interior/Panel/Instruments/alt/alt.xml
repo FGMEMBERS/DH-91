@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <!-- altimeter -->
-
 <PropertyList> 
 
   <path>alt.ac</path>
 
   <animation>
     <object-name>fond</object-name>
+    <object-name>knob</object-name>
     <object-name>face</object-name>
     <object-name>alt-Needle1</object-name>
     <object-name>alt-Needle2</object-name>
@@ -16,18 +16,12 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/DH-91/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
@@ -46,16 +40,11 @@
      <type>rotate</type>
     <object-name>alt-Needle1</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.36</factor>
-    <center> 
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
+    <factor> 0.36 </factor>
     <axis> 
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -63,16 +52,11 @@
     <type>rotate</type>
     <object-name>alt-Needle2</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.036</factor>
-    <center> 
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
+    <factor> 0.036 </factor>
     <axis> 
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -80,16 +64,11 @@
     <type>rotate</type>
     <object-name>alt-Needle3</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.0036</factor>
-    <center> 
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
+    <factor> 0.0036 </factor>
     <axis> 
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 

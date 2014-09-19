@@ -1,12 +1,21 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="dh91-jsbsim-set.xml"> -->
-<PropertyList include="dh91-yasim-set.xml">
+<PropertyList include="dh91-base.xml">
 
   <sim>
-    <description>DH 91 Albatros</description>
+    
+    <description>DH 91 Albatros (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM), Pierre GEOFFROY (FDM)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">dh91-yasim</aero>
+    
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 0 </systems>
+      <cockpit type="int"> 0 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
   </sim>
 
 </PropertyList>
-
