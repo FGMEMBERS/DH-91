@@ -2,13 +2,14 @@
 
 <PropertyList>
   
-  <path>GreenLight.ac</path>
+  <path>WhiteLight.ac</path>
   
   <animation>
     
     <object-name>Light</object-name>
   </animation>
   
+  <!-- Transparency for Rembrandt -->
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>Light</object-name>
@@ -26,12 +27,20 @@
   </animation>
   
   <animation>
+    <type>select</type>
+    <object-name>Light</object-name>
+    <condition>
+      <property>/sim/model/lights/sbc1/state</property>
+    </condition>
+  </animation>
+  
+  <animation>
     <type>material</type>
     <object-name>Light</object-name>
     <emission>
-      <red>   0 </red>
+      <red>   2 </red>
       <green> 2 </green>
-      <blue>  0 </blue>
+      <blue>  2 </blue>
     </emission>
   </animation>
   
@@ -49,7 +58,7 @@
     <type>select</type>
     <object-name>Light</object-name>
     <condition>
-      <property>/controls/switches/positionlight-switch</property>
+      <property>/controls/switches/strobelight-switch</property>
     </condition>
   </animation>
 -->

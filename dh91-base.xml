@@ -1,23 +1,24 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
-  <sim include="Nasal/views.xml">
-
+  
+  <sim include="Systems/views.xml">
+    
+    <description>DH 91 Albatros (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM), Pierre GEOFFROY (FDM)</author>
-    <aircraft-version>0.1</aircraft-version>
+    <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
-
+    
     <fuel-fraction>0.75</fuel-fraction>
-
+    
     <startup>
       <splash-texture>Aircraft/DH-91/dh91-splash.png</splash-texture>
     </startup>
-
+    
     <sound>
       <path archive="y">Aircraft/DH-91/Sounds/dh91-sound.xml</path>
     </sound>
-
+    
     <model>
       <path archive="y">Aircraft/DH-91/Models/dh91.xml</path>
       <dh91>
@@ -27,54 +28,70 @@
         <file type="string">default</file>
       </livery>
     </model>
-
+    
+    <instrumentation>
+      <path>Aircraft/DH-91/Systems/instrumentation.xml</path>
+    </instrumentation>
+    
     <multiplay>
       <chat_display>1</chat_display>
-      <generic>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
+      <generic> 
+        <int   n="0"  type="int">  0 </int>                                        <!-- 0 immat -->
+        <int   n="1"  type="int">  0 </int>                                        <!-- 1 immat -->
+        <int   n="2"  type="int">  0 </int>                                        <!-- 2 immat -->
+        <int   n="3"  type="int">  0 </int>                                        <!-- 3 immat -->
+        <int   n="4"  type="int">  0 </int>                                        <!-- 4 immat -->
+        <int   n="5"  type="int">  0 </int>                                        <!-- 5 immat -->
+        <int   n="6"  type="bool"> 1 </int>                                        <!-- 6 smoke/bomb/torpedo -->
+        <int   n="7"  type="int">  0 </int>                                        <!-- 7 color -->
+        <int   n="8"  alias="/systems/electrical/outputs/nav-lights">0</int>       <!-- 8 nav-lights -->
+        <int   n="9"  alias="/sim/model/lights/beacon/state">false</int>           <!-- 9 strobe-lights -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m">0</float>                       <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft">0</float>                      <!-- altitude for Smoke/Trail -->
+        <float n="4"  alias="/engines/engine[0]/rpm"/>
+        <float n="5"  alias="/engines/engine[0]/cranking"/>
+        <float n="6"  alias="/engines/engine[1]/rpm"/>
+        <float n="7"  alias="/engines/engine[1]/cranking"/>
+        <float n="8" alias="/engines/engine[2]/rpm"/>
+        <float n="9" alias="/engines/engine[2]/cranking"/>
+        <float n="10" alias="/engines/engine[3]/rpm"/>
+        <float n="11" alias="/engines/engine[3]/cranking"/>
+        <float n="12" alias="/gear/gear[0]/wow/"/>
+        <float n="13" alias="/gear/gear[1]/wow/"/>
+        <float n="14" alias="/gear/gear[2]/wow/"/>
+        <float n="15" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="16" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="17" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
       </generic>
     </multiplay>
-
-    <help>
-      <title>DH 91 Albatros</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close crew doors</desc>
-      </key>
-      <key>
-        <name>D</name>
-        <desc>Open/Close passengers doors</desc>
-      </key>
-    </help>
-
+    
+    <help include="Systems/help.xml"/>
+    
     <menubar include="Dialogs/dh91-menu.xml"/>
-
-    <weight n="0">
-      <name>Pilot</name>
-      <weight-lb>175</weight-lb>
-      <max-lb>200</max-lb>
-    </weight>
-
+    
   </sim>
-
+  
   <input>
-    <keyboard include="Nasal/dh91-keyboard.xml"/>
+    <keyboard include="Systems/dh91-keyboard.xml"/>
   </input>
-
+  
   <nasal>
-    <dh91>
+    <doors>
       <file>Aircraft/DH-91/Nasal/doors.nas</file>
+    </doors>
+    <dh91>
       <file>Aircraft/DH-91/Nasal/staircase.nas</file>
       <file>Aircraft/DH-91/Nasal/liveries.nas</file>
       <file>Aircraft/DH-91/Nasal/light.nas</file>
-      <file>Aircraft/DH-91/Nasal/immat.nas</file>
     </dh91>
+    <immat>
+      <file>Aircraft/DH-91/Nasal/immat.nas</file>
+    </immat>
   </nasal>
-
+  
 </PropertyList>
-
