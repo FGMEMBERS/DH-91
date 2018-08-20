@@ -15,6 +15,18 @@
       <cockpit type="int"> 0 </cockpit>
       <model type="int">   4 </model>
     </rating>
+
+    <tags>
+      <tag>1930s</tag>
+      <tag>1940s</tag>
+      <tag>transport</tag>
+      <tag>retractable-gear</tag>
+      <tag>h-tail</tag>
+      <tag>piston</tag>
+      <tag>propeller</tag>
+      <tag>tail-dragger</tag>
+      <tag>variable-pitch</tag>
+    </tags>
     
   </sim>
 
